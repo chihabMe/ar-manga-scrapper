@@ -1,0 +1,8 @@
+lekmanga/downloaded_mangas/
+
+lekmanga/__pycache__/
+lekmanga/__pycache__/*
+
+./lekmanga/__pycache__/
+./lekmanga/__pycache__/*
+__pycache__
