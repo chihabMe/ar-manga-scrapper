@@ -12,9 +12,9 @@ def images_to_pdf(all_image_paths, output_pdf_path):
 
     if images:
         images[0].save(output_pdf_path, save_all=True, append_images=images[1:])
-        print(f"✅ Saved PDF at: {output_pdf_path}")
+        print(f" Saved PDF at: {output_pdf_path}")
     else:
-        print("❌ No images found to convert.")
+        print(" No images found to convert.")
 
 def collect_all_images(manga_folder):
     all_images = []
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     manga_folder = os.path.abspath(sys.argv[1])
 
     if not os.path.isdir(manga_folder):
-        print(f"❌ Error: '{manga_folder}' is not a valid folder.")
+        print(f" Error: '{manga_folder}' is not a valid folder.")
         sys.exit(1)
 
     all_image_paths = collect_all_images(manga_folder)
